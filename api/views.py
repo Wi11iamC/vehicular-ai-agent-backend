@@ -20,4 +20,4 @@ class RGBViewSet(viewsets.ModelViewSet):
     """
     queryset = rgb_sensor.objects.all()
     serializer_class = RGBSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = []
