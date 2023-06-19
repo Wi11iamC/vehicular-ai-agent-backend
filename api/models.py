@@ -7,3 +7,5 @@ class rgb_sensor(models.Model):
 class semantic_segmentation_camera(models.Model):
     image_url = models.ImageField(upload_to = "semantic_segmentation_images")
 
+class depth_camera(models.Model):
+    image_url = models.ImageField(upload_to = "depth_camera_images")
