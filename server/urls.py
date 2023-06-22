@@ -26,14 +26,13 @@ router.register(r'users', views.UserViewSet)
 router.register(r'rgb', views.RGBViewSet)
 router.register(r'imu', views.IMUViewSet)
 router.register(r'semantic', views.SemanticViewSet)
-router.register('lidar', views.LidarViewSet)
-router.register('radar', views.RadarViewSet)
-router.register('depth', views.DepthViewSet)
+router.register(r'lidar', views.LidarViewSet)
+router.register(r'radar', views.RadarViewSet)
+router.register(r'depth', views.DepthViewSet)
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
-    path('api/', include('api.urls')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

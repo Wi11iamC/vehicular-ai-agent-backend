@@ -35,8 +35,6 @@ class radar_sensor(models.Model):
 class rss_sensor(models.Model):
     timestamp = models.IntegerField()
 
-class IMU_sensor(models.Model):
-    timestamp = models.IntegerField()
 
 class semantic_lidar_sensor(models.Model):
     timestamp = models.IntegerField

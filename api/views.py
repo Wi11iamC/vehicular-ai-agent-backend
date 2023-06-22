@@ -5,8 +5,6 @@ from rest_framework import permissions
 from api.serializers import UserSerializer, RGBSerializer,IMU_Serializer, SemanticSerializer, RadarSerializer, LidarSerializer, DepthSerializer
 from api.models import rgb_sensor, IMU_sensor, depth_camera, lidar_sensor, radar_sensor, semantic_segmentation_camera
 
-
-
 class UserViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
@@ -62,6 +60,3 @@ class SemanticViewSet(viewsets.ModelViewSet):
     queryset = semantic_segmentation_camera.objects.all()
     serializer_class = SemanticSerializer
     permission_classes = []
-
-
-
