@@ -12,7 +12,7 @@ def main():
         response = requests.post(API_URL, files=files)
 
         if response.status_code == 201:
-            print('RGB sensor image created successfully.')
+            print('RGB sensor image created successfully')
         else:
             print('Failed to create RGB sensor image')
 
