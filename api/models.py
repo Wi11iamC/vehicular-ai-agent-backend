@@ -2,8 +2,25 @@ from django.db import models
 
 # Create your models here.
 class rgb_sensor(models.Model):
-    timestamp = models.IntegerField()
+    # timestamp = models.IntegerField() <-- We will add this later
     image_url=models.ImageField(upload_to='rgb_images')
+
+"""
+Collision detector
+Depth camera
+GNSS sensor
+IMU sensor
+Lane invasion detector
+LIDAR sensor
+Obstacle detector
+Radar sensor
+RGB camera
+RSS sensor
+Semantic LIDAR sensor
+Semantic segmentation camera
+Instance segmentation camera
+DVS camera
+Optical Flow camera
 
 class semantic_segmentation_camera(models.Model):
     timestamp = models.IntegerField()
@@ -37,23 +54,7 @@ class rss_sensor(models.Model):
 
 class IMU_sensor(models.Model):
     timestamp = models.IntegerField()
-"""
-Collision detector
-Depth camera
-GNSS sensor
-IMU sensor
-Lane invasion detector
-LIDAR sensor
-Obstacle detector
-Radar sensor
-RGB camera
-RSS sensor
-Semantic LIDAR sensor
-Semantic segmentation camera
-Instance segmentation camera
-DVS camera
-Optical Flow camera
-"""
+
 class semantic_lidar_sensor(models.Model):
     timestamp = models.IntegerField
 
@@ -69,3 +70,4 @@ class optical_flow_camera(models.Model):
 class IMU_sensor(models.Model):
     timestamp = models.IntegerField()
     accelerometer = models.IntegerField()
+"""
